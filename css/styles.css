@@ -1,0 +1,82 @@
+
+* {
+    font-size: 12px;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#interface {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#interface .cabecalho {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#interface table {
+    margin: auto;
+    background-color: #111;
+    border: 6px solid #111;
+    border-radius: 5px;
+}
+
+#interface table td {
+    margin: 0;
+    padding: 0;
+}
+
+#interface table td #painel {
+    width: 100%;
+    margin-block-end: 5px;
+    padding: .25rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #c1c1c1;
+}
+
+#interface table td #painel #txt_operadores {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: .8rem;
+    color: #666;
+}
+
+#interface table td #painel #txt_display {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#interface table .bt-calc {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    border-radius: .1rem;
+    cursor: pointer;
+}
+
+#interface table .bt-calc:hover {
+    background-color: rgb(230, 230, 230);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .8);
+}
+
+#interface table .bt-ac {
+    font-size: .6rem;
+    font-weight: bold;
+}
+
+#interface table td .bt-duble {
+    height: 62px;
+}
