@@ -1,82 +1,77 @@
-
-* {
-    font-size: 12px;
-    font-family: Verdana, sans-serif;
+*{
+    font-size: 12 px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #222;
+    font-family: verdana, sans-serif;
 }
 
 #interface {
+    display: block;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    height: 100hs;
+    padding: 2rem;
+    background-color: #fafafa;
 }
 
-#interface .cabecalho {
-    width: 100%;
-    margin: 1rem 0;
-    padding: 1rem 0;
-    text-align: center;
+#interface .cabecalho{
+    display: block;
+    width: 70%;
+    margin: 0 auto 2rem auto;
+}
+
+#interface .cabecalho h2{
+    display: block;
+    text-align:  center;
     text-transform: uppercase;
+    font-size: 1.5rem;
 }
 
-#interface table {
-    margin: auto;
-    background-color: #111;
-    border: 6px solid #111;
-    border-radius: 5px;
+#interface table{
+    margin: 0 auto;
+    padding: .5rem;
+    border-radius: .25rem;
+    background-color: #ddd;
+    box-shadow: 0 0 2px rgba(0,0,0,.8);
 }
 
-#interface table td {
-    margin: 0;
-    padding: 0;
-}
-
-#interface table td #painel {
-    width: 100%;
-    margin-block-end: 5px;
-    padding: .25rem;
-    border: 1px solid #999;
-    border-radius: 5px;
-    background-color: #c1c1c1;
-}
-
-#interface table td #painel #txt_operadores {
+#interface table button {
     display: block;
-    width: 100%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+#interface table #painel {
+    display: block;  
+    background-color: #333;
+    border-radius: .25rem;
+}
+
+#interface table #painel #txt_operadores{
+    display: block;
+    color: #fafafa;
     text-align: right;
+}
+
+#interface table #painel #txt_display {
+    display: block;
+    background-color: transparent;
+    border: 0;  
+    outline: none;
+    color: #fafafa;
+    text-align: right;
+}
+
+#interface table #bt-acce {
     font-size: .8rem;
-    color: #666;
-}
-
-#interface table td #painel #txt_display {
-    display: block;
-    width: 100%;
-    text-align: right;
-    font-size: 1.2rem;
-    color: #333;
-}
-
-#interface table .bt-calc {
-    width: 30px;
-    height: 30px;
-    border: 0;
-    box-shadow: 0 0 2px rgba(0, 0, 0, .4);
-    border-radius: .1rem;
-    cursor: pointer;
-}
-
-#interface table .bt-calc:hover {
-    background-color: rgb(230, 230, 230);
-    box-shadow: 0 0 2px rgba(0, 0, 0, .8);
-}
-
-#interface table .bt-ac {
-    font-size: .6rem;
     font-weight: bold;
+    color: #7e0a0a;
+
 }
 
-#interface table td .bt-duble {
-    height: 62px;
+#interface table #bt-plus,
+#interface table #bt-equal {
+    height: 102px;
 }
